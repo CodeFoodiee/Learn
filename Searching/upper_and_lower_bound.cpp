@@ -10,7 +10,7 @@ public:
         int result = -1;
         while(low <= high){
             int mid = low + (high - low)/2;
-            if(mid >= x){
+            if(v[mid] >= x){
                 result = mid;
                 high = mid -1;
             }
@@ -27,7 +27,7 @@ public:
         int result = -1;
         while(low <= high){
             int mid = low + (high - low)/2;
-            if(mid > x){
+            if(v[mid] > x){
                 result = mid;
                 high = mid -1;
             }
